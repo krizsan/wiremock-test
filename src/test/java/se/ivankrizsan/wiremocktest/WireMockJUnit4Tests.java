@@ -240,7 +240,8 @@ public class WireMockJUnit4Tests extends AbstractTestBase {
 
         /*
          * Create the response transformer that will insert values into the response
-         * templates. Note that the
+         * templates. Note that the transformer is not global, that is it is not automatically
+         * applied to all responses from the WireMock server.
          */
         final ResponseTemplateTransformer theTemplateTransformer =
             new ResponseTemplateTransformer(false);

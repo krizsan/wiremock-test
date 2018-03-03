@@ -38,7 +38,7 @@ public class WireMockHttpsNoClientAuthTests extends AbstractTestBase {
         .keystorePassword(SERVER_KEYSTORE_PASSWORD));
 
     /**
-     * Initializes REST Assured for HTTPS communication. To be called before each test.
+     * Performs preparations before each test.
      */
     @Before
     public void setup() {

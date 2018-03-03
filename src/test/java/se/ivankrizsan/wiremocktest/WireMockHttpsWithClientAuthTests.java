@@ -52,7 +52,7 @@ public class WireMockHttpsWithClientAuthTests extends AbstractTestBase {
     protected WireMockServer mWireMockServer;
 
     /**
-     * Initializes REST Assured for HTTPS communication. To be called before each test.
+     * Performs preparations before each test.
      */
     @Before
     public void initializeRestAssuredHttps() {
@@ -98,8 +98,6 @@ public class WireMockHttpsWithClientAuthTests extends AbstractTestBase {
     /**
      * Test sending a HTTPS request using REST Assured to the mock server that matches the request that
      * the mock server expects.
-     * Expected result: A response containing a greeting should be received from the server.
-     *
      * NOTE!
      * REST Assured seems to be unable to do HTTPS with mutual authentication if the client
      * keystore and truststore is configured using the {@code keyStore} and {@code trustStore}
